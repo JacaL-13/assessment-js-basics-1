@@ -72,6 +72,7 @@ let gitAddCode = 'git add .'
 //CODE HERE
 let gitCommitDefinition = 'git commit logs any changes since the previous commit and requires a description of the changes made.'
 let gitCommitCode = 'git commit -m "initial commit"'
+
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
@@ -79,3 +80,4 @@ let gitCommitCode = 'git commit -m "initial commit"'
 */
 
 //CODE HERE
+let gitPushDefinition = 'git push syncs local changes to the GitHub cloud.'
