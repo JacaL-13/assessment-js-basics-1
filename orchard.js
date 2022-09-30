@@ -50,10 +50,15 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+let totalAcres = 0
 
+for (i = 0; i < 7; i++) {
+    totalAcres += fujiAcres[i]
+    totalAcres += galaAcres[i]
+    totalAcres += pinkAcres[i]
+}
 
-
-
+console.log(totalAcres)
 
 // PROBLEM 2
 
@@ -68,10 +73,9 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+let averageDailyAcres = totalAcres / 7
 
-
-
-
+console.log(averageDailyAcres)
 
 // PROBLEM 3
 
@@ -107,7 +111,12 @@ let days = 0
 
 // CODE HERE
 
+while (acresLeft > 0) {
+    days ++
+    acresLeft -= averageDailyAcres
+}
 
+console.log(days)
 
 // PROBLEM 4
 
@@ -135,14 +144,13 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = fujiAcres.map(x => x * 6.5)
+let galaTons = galaAcres.map(x => x * 6.5)
+let pinkTons = pinkAcres.map(x => x * 6.5)
 
-
-
-
-
+console.log(fujiTons)
+console.log(galaTons)
+console.log(pinkTons)
 
 // PROBLEM 5
 
@@ -160,16 +168,14 @@ let days = 0
     Hint: there are 2000 pounds in a ton.
 */
 
-// CODE HERE 
+// CODE HERE
+let fujiPounds = fujiTons.reduce((previousValue, currentValue) => previousValue + currentValue) * 2000
+let galaPounds = galaTons.reduce((previousValue, currentValue) => previousValue + currentValue) * 2000
+let pinkPounds = pinkTons.reduce((previousValue, currentValue) => previousValue + currentValue) * 2000
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
-
-
-
-
-
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
 
 // PROBLEM 6
 
@@ -189,14 +195,13 @@ let days = 0
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
 
-
-
-
-
+console.log(fujiProfit)
+console.log(galaProfit)
+console.log(pinkProfit)
 
 // PROBLEM 7
 
@@ -209,3 +214,6 @@ let days = 0
 */
 
 // CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+console.log(totalProfit)
