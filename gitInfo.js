@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+let gitDefinition = 'Git is a program installed on your computer run via command line that tracks changes to the files in designated folders.'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+let gitHubDefinition = 'GitHub is a website that syncs and stores git repositories in the cloud.'
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +28,7 @@
 */
 
 //CODE HERE
+let gitInitDefinition = 'git init adds files to a folder that set it as a repository allowing git to track changes in that folder.'
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -34,7 +37,7 @@
 */
 
 //CODE HERE
-
+let gitCloneDefinition = 'git clone creates a new copy of a git repository'
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +45,7 @@
 */
 
 //CODE HERE
+let gitStatusDefinition = 'git status gives information on the current status of the git repository, ie, changes that need to be commited.'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +57,8 @@
 */
 
 //CODE HERE
+let gitAddDefinition = 'git add informs git that it should start tracking designated files.'
+let gitAddCode = 'git add .'
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -64,8 +70,8 @@
 */
 
 //CODE HERE
-
-
+let gitCommitDefinition = 'git commit logs any changes since the previous commit and requires a description of the changes made.'
+let gitCommitCode = 'git commit -m "initial commit"'
 //////////////////PROBLEM 8////////////////////
 /*
     Create a variable called 'gitPushDefinition'.  
